@@ -28,7 +28,8 @@ action.onclick = function(){
 function standardWeight(weight, height){
 var standardWeight = (height - 100) * 0.9;
 var dietWeight = weight - standardWeight;
-var Text = "당신의 표준체중은 " + standardWeight + "kg입니다. 따라서 당신는 " + dietWeight +"kg를 감량해야합니다.";
+var fatRate = weight / standardWeight)*10;
+var Text = "당신의 표준체중은 " + standardWeight + "kg입니다. 따라서 당신는 " + dietWeight +"kg를 감량해야합니다." + "현재 비만도는" + fatRate + "입니다.";
 display.innerHTML = Text;
 }
  
