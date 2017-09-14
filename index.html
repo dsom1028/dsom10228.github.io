@@ -8,10 +8,10 @@
  </style>
 </head>
 <body>
- <h1>당신의 표준체중을 알아보세요~</h1>
+ <h1 id="display">당신의 표준체중을 알아보세요~</h1>
 <input type="text" id="weight" placeholder="당신의 체중을 알려주세요.">kg 
 <input type="text" id="height" placeholder="당신의 키를 알려주세요.">cm
- <button id="action">계산하기</button>
+<br><button id="action">계산하기</button>
 
  
 <!-- html주석은 화살표 -->
@@ -28,9 +28,10 @@ action.onclick = function(){
 function standardWeight(weight, height){
 var standardWeight = (height - 100) * 0.9;
 var dietWeight = weight - standardWeight;
-var Text = "친구의 현재 몸무게는 " + weight +"kg이고, 표준체중은 " + standardWeight + "kg입니다. 따라서 친구는 " + dietWeight +"kg를 감량해야합니다.";
-console.log(Text);
+var Text = "당신의 표준체중은 " + standardWeight + "kg입니다. 따라서 당신는 " + dietWeight +"kg를 감량해야합니다.";
+display.innerHTML = Text;
 }
+ 
 </script>
 </body>
 
