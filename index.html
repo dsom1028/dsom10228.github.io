@@ -8,18 +8,13 @@
 <script>
 // 변수와 함수
 // variable and function
-standardWeight();
-standardWeight();
-standardWeight();
-standardWeight();
+standardWeight(50,165);
   
-function standardWeight(){
-var friendWeight = 90;
-var friendHight = 178;
-var friendStandardWeight = (friendHight - 100) * 0.9;
-var friendDietWeight = friendWeight - friendStandardWeight;
-var friendText = "친구의 현재 몸무게는 " + friendWeight +"kg이고, 표준체중은 " + friendStandardWeight + "kg입니다. 따라서 친구는 " + friendDietWeight +"kg를 감량해야합니다.";
-console.log(friendText);
+function standardWeight(weight, height){
+var standardWeight = (hight - 100) * 0.9;
+var dietWeight = weight - standardWeight;
+var Text = "친구의 현재 몸무게는 " + weight +"kg이고, 표준체중은 " + standardWeight + "kg입니다. 따라서 친구는 " + dietWeight +"kg를 감량해야합니다.";
+console.log(Text);
 }
 </script>
 </body>
