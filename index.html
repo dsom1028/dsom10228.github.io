@@ -19,8 +19,10 @@
 // 변수와 함수
 // variable and function
 action.onclick = function(){
- alert("OK");
- standardWeight();
+ console.log("OK");
+ var myWeight = weight-input.value;
+ var myHeight = height-input.value;
+ standardWeight(myWeight,myHeight);
 }
   
 function standardWeight(weight, height){
